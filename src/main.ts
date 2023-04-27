@@ -61,8 +61,9 @@ import * as PopXR from '@popcity/xr'
 // requestAnimationFrame(render);
 
 import Vconsole from 'vconsole'
+// @ts-ignore
 import * as THREE from 'three';
-
+// @ts-ignore
 const vConsole = new Vconsole()
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -80,8 +81,8 @@ const geometry1 = new THREE.PlaneGeometry(10,10)
  texture.wrapT = THREE.RepeatWrapping;
 texture.wrapS = THREE.RepeatWrapping;
  const material = new THREE.MeshBasicMaterial( { color: 0xfffffff,side:2,map: texture,transparent:true} );
- const plane2 = new THREE.Mesh(geometry1, material);
- const plane = new THREE.Mesh( geometry, material );
+new THREE.Mesh(geometry1, material);
+const plane = new THREE.Mesh( geometry, material );
 const size = 100;
 const divisions = 100;
 

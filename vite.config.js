@@ -3,7 +3,6 @@ import {defineConfig} from "vite";
 import fs from 'fs'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 export default defineConfig({
-    base: /ar-location/,
     plugins:[
         checker({
             typescript: false
